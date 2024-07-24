@@ -1,0 +1,16 @@
+OLED_ENABLE = yes
+LTO_ENABLE = yes
+
+WPM_ENABLE = yes
+
+CAPS_WORD_ENABLE = yes
+COMMAND_ENABLE = no
+
+MOUSEKEY_ENABLE = no
+
+ENCODER_ENABLE = no
+RGBLIGHT_ENABLE = no
+RGB_MATRIX_ENABLE = no
+AUDIO_ENABLE = no
+
+SRC += animations/crab.c
