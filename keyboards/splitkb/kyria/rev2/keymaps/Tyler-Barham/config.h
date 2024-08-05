@@ -16,6 +16,8 @@
 
 #pragma once
 
+#define HOLD_ON_OTHER_KEY_PRESS
+
 #ifdef WPM_ENABLE
 #   define SPLIT_WPM_ENABLE
 #endif
