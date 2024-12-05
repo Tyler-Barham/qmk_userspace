@@ -35,8 +35,7 @@ enum layers {
 #define SYM_TAB  LT(_SYM, KC_TAB)
 
 #define CTL_TAB  MT(MOD_LCTL, KC_TAB)
-#define CTL_DEL  MT(MOD_LCTL, KC_DEL)
-#define ALT_BSPC MT(MOD_LALT, KC_BSPC)
+#define ALT_DEL  MT(MOD_LALT, KC_DEL)
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -44,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_ESC,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                                KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, KC_COLN,
       CTL_TAB,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                                KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,KC_QUOTE,
       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_LBRC, KC_CAPS,           FKEYS, KC_RBRC,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
-                                 _______, _______, KC_LGUI,  KC_SPC, NAV_ENT,         SYM_TAB,ALT_BSPC, CTL_DEL, _______, _______
+                                 _______, _______, KC_LGUI,  KC_SPC, NAV_ENT,         SYM_TAB, KC_BSPC, ALT_DEL, KC_LCTL, _______
     ),
     [_NAV] = LAYOUT(
       _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, KC_VOLU,                                            KC_PGUP, KC_HOME,  KC_END, _______, _______,  KC_DEL,
